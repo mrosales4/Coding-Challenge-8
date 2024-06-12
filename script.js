@@ -27,3 +27,20 @@ form.addEventListener('submit', (event) => {
   }
 
   
+// Create registration details element
+  const details = document.createElement('div');
+  details.innerHTML = `
+    <h3>Registration Details</h3>
+    <p>Name: ${name}</p>
+    <p>Email: ${email}</p>
+    <p>Event Date: ${date}</p>
+    <p>Preferences: ${preferences.join(', ')}</p>
+  `;
+
+  // Clear form after successful submission (optional)
+  form.reset();
+
+  // Display registration details
+  registrationDetails.innerHTML = '';
+  registrationDetails.appendChild(details);
+});
