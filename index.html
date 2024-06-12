@@ -14,3 +14,28 @@
     <form id="registrationForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
+    <br>
+
+        <label for="date">Event Date:</label>
+        <select id="date" name="date" required>
+            <option value="">Select Date</option>
+            <option value="2024-06-15">Saturday, June 15th</option>
+            <option value="2024-06-22">Saturday, June 22nd</option>
+            <option value="2024-06-29">Saturday, June 29th</option>
+        </select>
+        <br>
+
+        <label> Meal Preference:</label>
+        <br>
+        <input type="checkbox" id="vegetarian" name="preferences[]" value="Vegetarian"> Vegetarian
+        <input type="checkbox" id="nonVegetarian" name="preferences[]" value="Non-Vegetarian"> Non-Vegetarian
+        <input type="checkbox" id="vegan" name="preferences[]" value="Vegan"> Vegan
+        <br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="registrationDetails"></div>
+
+</body>
+</html>
